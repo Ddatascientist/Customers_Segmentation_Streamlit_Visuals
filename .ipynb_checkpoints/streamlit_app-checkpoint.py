@@ -14,7 +14,7 @@ cluster_bargraph
 
 st.title('Soyummy Customer Segmentation Dashboard')
 
-df = wrangle('../DATA_FILES/Soyum_data.xlsx')
+df = wrangle('Soyum_data.xlsx')
 selected_year = st.selectbox(label='Year', 
                              options=df['Date'].dt.year.unique(), 
                              placeholder="Choose an option", 

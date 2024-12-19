@@ -1,7 +1,5 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.express as px
 import streamlit as st
 
@@ -30,9 +28,9 @@ def wrangle(filepath):
 
   return df
 
-df = wrangle('../DATA_FILES/Soyum_data.xlsx')
+df = wrangle('Soyum_data.xlsx')
 
-clustered_df = pd.read_csv('../DATA_FILES/clustered_df.csv')
+clustered_df = pd.read_csv('clustered_df.csv')
 
 
 def top10_sales_bar(df):
